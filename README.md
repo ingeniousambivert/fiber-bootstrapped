@@ -138,6 +138,12 @@ _Implement Tests_
 
 Contributions are welcome. Please follow the existing code style and conventions.
 
+## Credits
+
+### Acknowledgements
+
+The project architecture and codebase is heavily inspired by [feathersjs](https://www.feathersjs.com/).
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
