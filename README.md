@@ -52,7 +52,8 @@ This project consists of the following main components:
 
 ## Project Directory Structure
 
-.```
+```
+.
 ├── go.mod
 ├── go.sum
 ├── main.go
@@ -98,8 +99,7 @@ This project consists of the following main components:
 ├── events.core.go
 ├── server.core.go
 └── service.core.go
-
-````
+```
 
 ## Todo
 
