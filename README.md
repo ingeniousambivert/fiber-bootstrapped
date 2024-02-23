@@ -52,62 +52,64 @@ This project consists of the following main components:
 
 ## Project Directory Structure
 
-```
-.
+.```
 ├── go.mod
 ├── go.sum
 ├── main.go
 └── src
-    ├── app
-    │   ├── app.go
-    │   ├── events
-    │   │   └── service.events.go
-    │   ├── helpers
-    │   │   ├── error.helper.go
-    │   │   └── middleware.helper.go
-    │   ├── hooks
-    │   │   └── service.hooks.go
-    │   ├── modules
-    │   │   └── mailer.module.go
-    │   └── schemas
-    │       ├── auth
-    │       │   ├── auth.schema.go
-    │       │   └── manage
-    │       │       └── auth_manage.schema.go
-    │       └── users
-    │           └── users.schema.go
-    ├── services
-    │   ├── auth
-    │   │   ├── build
-    │   │   │   └── auth.build.go
-    │   │   ├── controllers
-    │   │   │   └── auth.controller.go
-    │   │   └── utils
-    │   │       └── auth.utils.go
-    │   ├── services.go
-    │   └── users
-    │       ├── build
-    │       │   └── users.build.go
-    │       └── controllers
-    │           └── users.controller.go
-    └── core
-        ├── app.core.go
-        ├── configuration.core.go
-        ├── database.core.go
-        ├── events.core.go
-        ├── server.core.go
-        └── service.core.go
-```
+├── app
+│ ├── app.go
+│ ├── events
+│ │ └── service.events.go
+│ ├── helpers
+│ │ ├── error.helper.go
+│ │ └── middleware.helper.go
+│ ├── hooks
+│ │ └── service.hooks.go
+│ ├── modules
+│ │ └── mailer.module.go
+│ ├── schemas
+│ │ ├── auth
+│ │ │ ├── auth.schema.go
+│ │ │ └── manage
+│ │ │ └── auth_manage.schema.go
+│ │ └── users
+│ │ └── users.schema.go
+│ ├── services
+│ │ ├── auth
+│ │ │ ├── build
+│ │ │ │ └── auth.build.go
+│ │ │ ├── controllers
+│ │ │ │ └── auth.controller.go
+│ │ │ └── utils
+│ │ │ └── auth.utils.go
+│ │ ├── services.go
+│ │ └── users
+│ │ ├── build
+│ │ │ └── users.build.go
+│ │ └── controllers
+│ │ └── users.controller.go
+│ └── utils
+│ └── shared.util.go
+└── core
+├── app.core.go
+├── configuration.core.go
+├── database.core.go
+├── events.core.go
+├── server.core.go
+└── service.core.go
+
+````
 
 ## Todo
 
 - [ ] Support for logging to files, databases or external services.
-- [ ] WebSockets or Server-Sent Events (SSE) support for real-time communication.
 - [ ] Publish Create/Read/Update/Delete events on service method calls.
-- [ ] Centralized error monitoring mechanism.
-- [ ] Support for multiple databases (SQL and NoSQL) with ORM/ODM support.
-- [ ] Unit tests, integration tests, and end-to-end tests for code coverage.
-- [ ] Dockerize the project.
+- [ ] Support for bulk Create/Update/Delete operations.
+- [ ] Support for MongoDB Aggregation Queries via Service interface.
+- [ ] WebSockets or Server-Sent Events (SSE) support for real-time communication.
+- [ ] Unit tests and end-to-end tests.
+- [ ] Dockerize the codebase.
 
 ## Usage
 
@@ -117,7 +119,7 @@ This project consists of the following main components:
 
    ```bash
    go mod vendor
-   ```
+````
 
 3. Configuring the server with environment variables
 
