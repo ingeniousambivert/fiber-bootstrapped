@@ -103,13 +103,14 @@ This project consists of the following main components:
 
 ## Todo
 
+- [ ] Add more data validation ([validator](https://pkg.go.dev/github.com/go-playground/validator/v10)).
 - [ ] Support for logging to files, databases or external services.
 - [ ] Publish Create/Read/Update/Delete events on service method calls.
 - [ ] Support for bulk Create/Update/Delete operations.
 - [ ] Support for MongoDB Aggregation Queries via Service interface.
 - [ ] WebSockets or Server-Sent Events (SSE) support for real-time communication.
 - [ ] Unit tests and end-to-end tests.
-- [ ] Dockerize the codebase.
+- [ ] Dockerize project.
 
 ## Usage
 
@@ -119,7 +120,7 @@ This project consists of the following main components:
 
    ```bash
    go mod vendor
-````
+   ```
 
 3. Configuring the server with environment variables
 
